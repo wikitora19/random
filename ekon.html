@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Halaman Web</title>
+	<style>
+		body{
+			background-color: #FFA500;
+		}
+		.garis-pisah{
+			background-color: springgreen;
+		}
+		.atas{
+			height: 10px;
+		}
+		.bawah{
+			margin-top: 20px;
+			margin-bottom: 10px;
+			height: 5px;
+		}
+		.judul{
+			display: inline-block;
+			width: 100%;
+			font-family: "Comic Sans MS", "Comic Sans", cursive;
+			font-size: 1.4em;
+			color: royalblue;
+			background-color: springgreen;
+		}
+		.isi-artikel{
+			color: white;
+			font-family: Arial;
+			text-align: justify;
+		}
+		.sumber-artikel{
+			font-weight: bold;
+			font-style: italic;
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		img{
+			display: block;
+			margin: 0 auto;
+			width: 150px;
+		}
+		.tab1{
+			margin: 0 auto;
+			background-color: lightblue;
+		}
+		.field{
+			background-color: lawngreen;
+			text-align: center;
+		}
+		.kontak{
+			margin-top: 10px;
+			margin-bottom: 20px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<span>Menu</span>
+		<li>Artikel</li>
+		<li>Profile</li>
+		<li>Service</li>
+	</ul>
+	<div class="garis-pisah atas"></div>
+	<ol start="22">
+		<span>Pages</span>
+		<li>Login</li>
+		<li>Register</li>
+		<li>Forgot Password</li>
+		<li>404 Page</li>
+	</ol>
+	<article>
+		<span class="judul">
+			<marquee direction="left" scrollamount="15" onmouseover="stop()" onmouseover="this.stop();" onmouseout="this.start();">Lorem ipsum dolor sit amet.</marquee>
+		</span>
+		<div class="isi-artikel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repudiandae facere itaque architecto dolor sequi praesentium ratione modi, nam doloribus omnis quos at consectetur magni, temporibus tenetur quod quidem perferendis assumenda minima rerum inventore labore officia. Amet ratione aliquam, architecto libero animi, praesentium repellat dolore, ipsam maiores earum quo beatae eius recusandae similique, est vitae deleniti alias. Asperiores dicta, culpa tenetur quia autem non impedit illum saepe quidem voluptate a sapiente sit amet natus dolorum, corporis sequi! Accusantium, dolor eum eveniet dolores, aliquam dicta omnis perspiciatis earum nulla rem similique aut illum accusamus, deserunt nostrum optio dolore dolorem ipsum natus?</p>
+			<img src="../Image/Thumb/Rare_PEPE.png">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo optio, quaerat atque quisquam nulla repellat nostrum blanditiis sequi doloribus, modi sunt minus cum libero incidunt iste itaque fugiat odio quidem ipsa aut nisi repudiandae voluptas ad laudantium. Et similique sed facilis, ex reprehenderit mollitia dolore voluptatem! Ab, molestias vero aperiam eum pariatur vitae ipsum vel ex tenetur obcaecati in facilis reprehenderit iusto sapiente quae officiis iste error repudiandae! Voluptatem perspiciatis quidem dolor dolorum reiciendis, praesentium non asperiores impedit repellendus magni, perferendis quae quia. Maiores consectetur totam sint vero porro rem officiis delectus quibusdam quia? Earum quam suscipit recusandae commodi ut?</p>
+			<span class="sumber-artikel"><a href="form.html">Sumber: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, nostrum.</a></span>
+		</div>
+	</article>
+	<div class="garis-pisah bawah"></div>
+	<table class="tab1" border="1" cellpadding="5">
+		<caption><b>My Profile</b></caption>
+		<tr class="field">
+			<th colspan="2">Program Studi: Informatika</th>
+		</tr>
+		<tr>
+			<td>Nama </td>
+			<td>Okitora Winnetou</td>
+		</tr>
+		<tr>
+			<td>NPM </td>
+			<td>201843501313</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Alamat</td>
+			<td>Jl. Radar Auri No.91</td>
+		</tr>
+		<tr>
+			<td>Kecamatan Cimanggis</td>
+		</tr>
+		<tr>
+			<td>Keluarahan Mekarsari</td>
+		</tr>
+		<tr>
+			<td class="field" colspan="2">Kota Depok</td>
+		</tr>
+	</table>
+	<div class="kontak">Contact Us</div>
+	<table>
+		<form action="">
+			<tr>
+				<td><label for="nama">Nama </label></td>
+				<td colspan="2"><input type="text" id="nama"></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email</label></td>
+				<td><input type="text" id="email"></td>
+				<td>
+					<select name="email" id="email">
+						<option value="gmailcom">@gmail.com</option>
+						<option value="gmailcoid">@gmail.co.id</option>
+						<option value="yahoocom">@yahoo.com</option>
+						<option value="yahoocoid">@yahoo.co.id</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<input type="submit" value="Kirim">
+					<input type="submit" value="Batal">
+				</td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>
