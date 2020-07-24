@@ -59,6 +59,6 @@
 
 	}
 
-	$guru1 = new Count(0, 0, 0, 10);
+	$lecture = new Count(0, 0, 0, 10);
 
-	echo($guru1->getInfo());
+	echo($lecture->getInfo());
